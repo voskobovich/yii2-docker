@@ -55,6 +55,7 @@ RUN set -xe \
     && git clone --branch php7 https://github.com/php-memcached-dev/php-memcached.git /usr/src/php/ext/memcached/ \
     && docker-php-ext-configure memcached \
     && docker-php-ext-install memcached \
+    && docker-php-source delete \
     && apk del --no-cache zlib-dev cyrus-sasl-dev \
 
     # Clear
