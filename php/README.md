@@ -24,7 +24,7 @@ version: '2'
 services:
   php:
     build:
-      image: voskobovich/yii2-php:7-fpm-alpine
+      context: <path to folder with Dockerfile>
       args:
         - GITHUB_OAUTH_TOKEN=<your GitHub token>
     container_name: php
