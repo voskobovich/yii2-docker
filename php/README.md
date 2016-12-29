@@ -1,7 +1,7 @@
-Docker Image packages for Yii2 Framework 
+Docker Image PHP packages for Yii2 Framework 
 ===
 
-This repository contains source files for the docker image containers for Yii2 Framework.
+This repository contains source files for the Docker Image PHP containers for Yii2 Framework.
 
 See my [Docker Hub page](https://hub.docker.com/u/voskobovich).
 
