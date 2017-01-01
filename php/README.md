@@ -15,7 +15,13 @@ Create a new `Dockerfile` with this content
 
 ```text
 FROM voskobovich/yii2-php:7-fpm-alpine
+
+RUN chmod -R 774 /root /root/.composer
+
+USER operator
 ```
+
+The user "operator" are necessary for the maintenance of the project with "composer".
 
 and add new service in your `docker-compose.yml` file
 
