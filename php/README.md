@@ -3,9 +3,18 @@ Docker Image PHP packages for Yii2 Framework
 
 This repository contains source files for the Docker Image PHP containers for Yii2 Framework.
 
+Images from this repository, solve only **basic PHP requirements for Yii2**. There is nothing superfluous!  
+
+To check requirements, run the following command in your container:
+```bash
+php requirements.php
+```
+
 See my [Docker Hub page](https://hub.docker.com/u/voskobovich).
 
-Supported tags and respective Dockerfile links:
+## Supported tags
+
+Respective Dockerfile links:
 
 1. `7.1.0-fpm-alpine`, `7.1-fpm-alpine`, `7-fpm-alpine`, `fpm-alpine` ([7.1/fpm/alpine/Dockerfile](https://github.com/voskobovich/yii2-docker/blob/master/php/7.1/fpm/alpine/Dockerfile))
 
