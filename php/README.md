@@ -61,5 +61,5 @@ or use `docker build` command
 
 ```bash
 cp /path/to/your/dockerfile
-docker build -t symfony3-php --build-arg GITHUB_OAUTH_TOKEN=<your GitHub token> .
+docker build -t yii2-php:personal-edition --build-arg GITHUB_OAUTH_TOKEN=<your GitHub token> .
 ```
