@@ -22,12 +22,22 @@ Respective Dockerfile links:
 
 Create a new `Dockerfile` with this content
 
-```text
+```dockerfile
 FROM voskobovich/yii2-php:7-fpm-alpine
 
 RUN chmod -R 774 /root /root/.composer
 
+WORKDIR /var/www/html
+
+COPY ./source ./
+
+RUN set -xe \
+ && chown -R operator:root ./
+
 USER operator
+
+RUN set -xe \
+ && composer install --prefer-dist --no-dev
 ```
 
 The user "operator" are necessary for the maintenance of the project with "composer".
