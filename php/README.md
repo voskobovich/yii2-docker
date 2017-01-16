@@ -56,3 +56,9 @@ services:
     volumes:
       - <path to your yii2 project root>:/var/www/html
 ```
+
+or use `docker build` command
+
+```bash
+docker build -t symfony3-php --build-arg GITHUB_OAUTH_TOKEN=<your GitHub token> .
+```
