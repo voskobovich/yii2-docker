@@ -34,7 +34,7 @@ RUN set -xe \
     && docker-php-ext-install pdo_pgsql \
 
     # GD
-    && apk add --no-cache freetype-dev libpng-dev libjpeg-turbo-dev libxml2-dev imagemagick-dev \
+    && apk add --no-cache freetype-dev libpng-dev libjpeg-turbo-dev libxml2-dev \
     && docker-php-ext-configure gd \
         --with-gd \
         --with-freetype-dir=/usr/include/ \
@@ -43,6 +43,7 @@ RUN set -xe \
     && docker-php-ext-install gd \
 
     # ImageMagic
+    && apk add --no-cache imagemagick-dev \
     && pecl install imagick \
     && docker-php-ext-enable imagick \
 
