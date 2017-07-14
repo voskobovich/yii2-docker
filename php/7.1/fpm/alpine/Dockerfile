@@ -43,7 +43,7 @@ RUN set -xe \
     && docker-php-ext-install gd \
 
     # ImageMagic
-    && apk add --no-cache imagemagick-dev \
+    && apk add --no-cache imagemagick-dev pcre-dev \
     && pecl install imagick \
     && docker-php-ext-enable imagick \
 

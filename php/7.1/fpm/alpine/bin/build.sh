@@ -3,7 +3,7 @@
 set -ex
 
 REPOSITORY_NAME="voskobovich/yii2-php"
-MAJOR_TAG="7.1.0-fpm-alpine"
+MAJOR_TAG="7.1.7-fpm-alpine"
 MINOR_TAGS="7.1-fpm-alpine 7-fpm-alpine fpm-alpine"
 
 docker build -t "${REPOSITORY_NAME}:${MAJOR_TAG}" .
